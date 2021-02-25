@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- powerpoint Web Week 6 Javascript Callbacks Arrow Function -->
+    <head>
+        <meta charset="UTF-8">
+        <title>What Time is it</title>
+        <!--<link rel="stylesheet" type="text/css" href="style.css"> -->
+    </head>
+    <body>
+        <!-- Write your HTML content here -->
+        <p id="time"></p>
+	<h1>What time is it?</h1>
+
+    <script>
+        // Write your script here
+       let timeElement = document.querySelector('#time')
+
+    //    setInterval( function() {
+    //        let date = Date()                        // Built in date format
+    //        timeElement.innerHTML = date
+    //    }, 1000)                                     // Sets time interval to 1 second
+
+// Arrow function
+       setInterval( () => {
+           let date = Date()                        // Built in date format
+           timeElement.innerHTML = date
+       }, 1000)   
+    </script>
+    </body>
+
+</html>
